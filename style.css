@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#upload-section {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+#valid-records, #invalid-records {
+    margin-top: 20px;
+}

@@ -12,8 +12,8 @@
     </header>
     <main>
         <section id="upload-section">
-            <form id="upload-form">
-                <input type="file" id="csvFile" accept=".csv" required>
+            <form id="upload-form" method="post" enctype="multipart/form-data" action="process_upload.php">
+                <input type="file" name="csvFile" id="csvFile" accept=".csv" required>
                 <button type="submit">Upload CSV</button>
             </form>
         </section>

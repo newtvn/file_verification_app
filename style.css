@@ -1,33 +1,104 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-main {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3E2723; /* Dark brown */
+    color: #FFFFFF; /* Light text for contrast */
+    line-height: 1.6;
     padding: 20px;
 }
 
-#upload-section {
-    margin-bottom: 20px;
+header {
+    background-color: #333; /* Retaining initial dark color */
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text for readability */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333; /* Retaining initial dark color */
+    color: #ffffff;
+}
+
+button, input[type="submit"] {
+    background-color: #007bff; /* Initial primary blue */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
+input[type="file"] {
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+#results-section {
+    margin-top: 40px;
+}
+
+h2, h3 {
+    color: #007bff; /* Retaining blue for headings */
+    margin-bottom: 15px;
+}
+
+#valid-records, #invalid-records {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #e9ecef; /* Light background for contrast */
+    border-radius: 5px;
+    color: #333; /* Dark text for readability */
 }
 
 .hidden {
     display: none;
 }
 
-h2, h3 {
-    color: #333;
-}
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
 
-#valid-records, #invalid-records {
-    margin-top: 20px;
+    header, footer {
+        padding: 10px;
+    }
+
+    header h1, footer p {
+        font-size: 18px;
+    }
 }
